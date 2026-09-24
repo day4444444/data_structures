@@ -45,7 +45,7 @@ print(f"daugther age:{personal_info[6][1]}")
 #print(type(personal_info))
 #update father 
 new_age = input("please, type the new father age:")
-personal_info[2] =55
+personal_info[2] =new_age
 print(f" new father age is :{personal_info[2]}")
 #add new information
 personal_info.append('Malala')
