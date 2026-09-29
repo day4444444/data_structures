@@ -1,0 +1,12 @@
+from random import randint
+import os
+def rollDice():
+ i=1
+ whwille i<=10:
+    Key= imput("Press any Key to roll dice :::")
+    print(f"::: Roll{i} :::")
+    print("dice 1:{randint(1,6)}")
+    print("dice 2:{randint(1,6)}")
+    print("\n")
+    i+=1
+rollDice()
