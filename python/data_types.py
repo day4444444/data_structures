@@ -29,6 +29,7 @@ fruits = {}
 print(fruits)
 print(type(fruits))
 #class dict (es diccionario)
+
 #multi data type
 
 months =()
