@@ -1,0 +1,28 @@
+from random import randint
+import os
+numbers = []
+status = True
+
+while status:
+    num = randint (1,10)
+    
+    # Requisito 2: Evitar números duplicados
+    if num in numbers:
+        print(f"Generated number: {num}")
+        print("This number is already registered in the list.")
+    else:
+        numbers.append(num)
+
+    print (f"Display List: {numbers}")
+    print (f"Total Rows: {len (numbers)}")
+
+    # Requisito 1: Validar la entrada del usuario con [y/Y/n/N]
+    while True:
+        key = input("Do you want to insert another number? [y/Y/n/N] ")
+        if key in ['Y', 'y', 'N', 'n']:
+            break
+        print("Invalid option. Please enter Y, y, N, or n.")
+
+    if key == 'N' or key == 'n':
+        print("Program finished.")
+        break
